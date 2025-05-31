@@ -1,0 +1,395 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+#navbar{
+    position:sticky;
+    top:0;
+    left:0;
+    z-index:100;
+    padding:.5rem 5rem;
+    box-shadow:5px 5px 20px rgba(0,0,0,.5);
+    background:black;
+}
+.navbar .navbar-brand{
+    font-size:25px;
+    font-weight:800;
+    color:burlywood !important;
+}
+#navbarSupportedContent a{
+    color:white;
+    border-bottom:2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom:2px solid burlywood;
+}
+#navbarSupportedContent button{
+    background:burlywood;
+    width:5rem;
+    border-radius:15px;
+}
+section{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:top;
+   
+}
+/***home***/
+
+#home{
+    background:url(img-1.webp);
+    background-size:cover;
+    background-position:center; 
+}
+#home h1{
+    font-size:100px;
+    color:gold;
+    letter-spacing: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow:0px 1px 0px #ccc;
+    text-shadow:0px 2px 0px #ccc;
+    text-shadow:0px 3px 0px #ccc;
+    text-shadow:0px 4px 0px #ccc;
+    text-shadow:0px 5px 0px #ccc;
+
+} 
+#home.input-group{
+    width:20%;
+    height:5px;
+    
+}
+.signin{
+    background: green !important;
+    color:white !important;
+    
+    box-shadow:2px 4px 5px rgba(0,0,0,.3);
+}
+/*****About****/
+#about{
+    background:linear-gradient(to right,rgb(185, 127, 50),burlywood 100%)
+}
+#about h1{
+    font-weight:800;
+    font-size:50px;
+    color:white;
+}
+#about p{
+    color:white;
+}
+#product{
+    background:burlywood;
+}
+#product h1{
+    font-size:50px;
+    letter-spacing:2px;
+    font-weight:700;
+}
+.card{
+    width:250px;
+    height:300px;
+    background:burlywood !important;
+    border:none !important;
+    box-shadow:15px 20px 20px rgba(0,0,0,.3),
+               inset 4px 4px 10px black;
+    border-radius:20px;
+    overflow:hidden;
+    justify-content:center;
+    align-items:center;
+    margin:20px 60px;
+    transition:2s;
+    
+}
+.card:hover{
+    box-shadow:inset 5px 5px 10px rgba(0,0,0,.3),
+            inset -4px -4px 10px white;
+            transition:2s;
+}
+#contact img{
+    height:50%;
+}
+.box{
+    width:80% !important;
+    
+    margin-top:10px;
+}
+form{
+    display:flex;
+    flex-direction:column;
+}
+#contact input{
+    margin:10px 0px;
+}
+#contact textarea{
+    margin:10px 0px;
+
+}
+footer{
+    width:100%;
+    height:30px;
+    background:black;
+    margin-top:-30px;
+    text-align:center;
+    color:white;
+    padding:3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-----navbar------>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">STYLISH</a>
+          <button class="navbar-toggler" type="button"
+           data-bs-toggle="collapse" 
+           data-bs-target="#navbarSupportedContent" 
+           
+           aria-expanded="false" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link " href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#product">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Contact</a>
+              </li>
+             </ul>
+             <button class="btn p-2 my-lg-0 my-2">Sign In</button>
+        </div>
+      </nav>
+
+    <!-----navbar------>
+<section id="home">
+      
+<div class="">
+    <input type="text"  placeholder="Email Address">
+    <button>Get Started</button>
+</div>
+</section>
+
+<!----About-->
+
+<section id="about">
+   <div class="container-fluid">
+    <div class="row">
+    <div class="col-lg-6 col-md-6 col-12 my-2" >
+       <img src="img-2.webp" class="img-fluid" >
+       </div> 
+    <div class="col-lg-4 col-md-4 col-12 p-lg-5 p-2 my-5">
+           <h1>ABOUT US</h1>
+           <p>🛍️ Discover Trendy Fashion, Timeless Elegance, and Unmatched Comfort.
+            From chic outfits to statement accessories, we bring you the latest styles that redefine your wardrobe.</p>
+           <br> 
+            🌟 Our Collections<br>
+            ✅ Women’s Fashion – Stunning dresses, elegant tops & more.<br>
+            ✅ Men’s Wear – Classic formals, stylish casuals & trendy fits.<br>
+            ✅ Accessories & Footwear – Handbags, jewelry, shoes & beyond.<br>
+            ✅ Exclusive Ethnic Wear – Tradition meets modern elegance.</p>
+    </div>  
+    </div>
+   </div>
+
+</section>
+
+<section id="product">
+    <div class="container m-5">
+        <h1 class="text-center">OUR PRODUCTS</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="img-3.webp" class="card-img-top" >
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Gown</h5>
+                      
+                      <a href="#" class="btn signin">Buy Now</a>
+                    </div>
+                  </div> 
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="img-4.webp" class="card-img-top" >
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Bodycon</h5>
+                      
+                      <a href="#" class="btn signin">Buy Now</a>
+                    </div>
+                  </div> 
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="img-5.webp" class="card-img-top" >
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Casual</h5>
+                      
+                      <a href="#" class="btn signin">Buy Now</a>
+                    </div>
+                  </div> 
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="img-6.webp" class="card-img-top" >
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Flare</h5>
+                      
+                      <a href="#" class="btn signin">Buy Now</a>
+                    </div>
+                  </div> 
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="img-7.webp" class="card-img-top" >
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Kurti</h5>
+                      
+                      <a href="#" class="btn signin">Buy Now</a>
+                    </div>
+                  </div> 
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="img-8.webp" class="card-img-top" >
+                    <div class="card-body text-center">
+                      <h5 class="card-title">sweater</h5>
+                      
+                      <a href="#" class="btn signin">Buy Now</a>
+                    </div>
+                  </div> 
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="img-9.webp" class="card-img-top" >
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Crop top</h5>
+                      
+                      <a href="#" class="btn signin">Buy Now</a>
+                    </div>
+                  </div> 
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="img-10.webp" class="card-img-top" >
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Maxi</h5>
+                      
+                      <a href="#" class="btn signin">Buy Now</a>
+                    </div>
+                  </div> 
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <img src="img-11.webp" class="card-img-top" >
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Jean Tops</h5>
+                      
+                      <a href="#" class="btn signin">Buy Now</a>
+                    </div>
+                  </div> 
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container box">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+              <img src="img-12.webp" >
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <h1>CONTACT US</h1>
+                <form class="mb-3">
+                
+                    <input type="text" class="form-control"
+                    placeholder="Enter your name">
+                    <input type="Email" class="form-control"
+                    placeholder="Enter your Mail">
+                    <textarea class="form-control"
+                    placeholder="Enter your Message"></textarea>
+                    <button class="btn signin">Send Message</button>
+                </form>
+            </div>
+            </div>  
+    </div>
+</section>
+
+
+<footer>Copyrights @Stylish Shop 2000</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+
+
+
+
+    
+</body>
+</html>
